@@ -1,0 +1,20 @@
+[project]
+name = "openai-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Anis Momin", email = "anis_momin@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "litellm==1.66.3",
+    "openai-agents[litellm]>=0.0.13",
+]
+
+[project.scripts]
+liellm-agent = "openai_agent.hello:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
